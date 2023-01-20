@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EarExplode</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <a href="#" class="logo">Ear<br>Explode</a>
+            <ul>
+                <li>
+                    <a class="about" href="#">About Us</a>
+                </li>
+                 <li><a href="divider">|</a></li> 
+                 <button type="button">Sign Up</button>
+                <a href="log-in.html"><button type="button">LOG IN</button></a>
+            </ul>
+        
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>LISTEN<br> WITH <br> US</h1>
+            </div>
+
+            <div class="right-col">
+                <a href="Music.html"><img class="play" src="images/play.png" alt="play"></a>
+              
+            </div>
+        </div>
+        <div class="popup">
+            <div class="popup-content">
+                <object data="terms.txt" type="text/plain"
+                    width="500" style="height: 300px">
+                </object>
+                <div>
+                <p class="accept">Accept</p> 
+                </div>       
+            </div>
+          </div>
+    </div>
+
+        <script>
+            // Get the button that opens the pop-up window
+            var trigger = document.querySelector('.about');
+      
+            // Get the pop-up window
+            var popup = document.querySelector('.popup');
+      
+            // Get the <span> element that closes the pop-up window
+            var closeButton = document.querySelector('.accept');
+      
+            // When the user clicks on the button, open the pop-up window
+            trigger.addEventListener('click', function() {
+              popup.style.display = 'flex';
+            });
+      
+            // When the user clicks on <span> (x), close the pop-up window
+            closeButton.addEventListener('click', function() {
+              popup.style.display = 'none';
+            });
+          </script>
+    
+
+    <div class="ftr">
+    
+        <footer>
+            <div class="footer">
+           
+            <div class="row">
+                <ul>
+                <li><a href="#">Privacy and Policy</a></li>
+                <li>|</li>
+                <li><a class="terms">Terms and Conditions</a></li>
+                </ul>
+                </div>
+           
+            
+            <div class="row">
+            EarExlode Copyright © 2023 EarExplode - All rights reserved || Designed By: EarExlode Co.
+            </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
